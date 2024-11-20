@@ -1,4 +1,15 @@
+'use client'
+
 import React from 'react'
+import styled from 'styled-components'
+
+const Contailner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-size: x-large;
+`
 
 export default function Page({
   params,
@@ -7,16 +18,5 @@ export default function Page({
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 'auto',
-      }}
-    >
-      <h1>Hello, My Page!</h1>
-    </div>
-  )
+  return <Contailner>My Page!</Contailner>
 }

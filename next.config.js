@@ -36,6 +36,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   env: {},
+  compiler: {
+    styledComponents: true,
+  },
 }
 
 export default nextConfig
